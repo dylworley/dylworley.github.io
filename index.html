@@ -1,1 +1,21 @@
-"oh hi guys"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dyl's Website</title>
+</head>
+<body>
+    <h2>Forgot Password</h2>
+
+    <?php if (isset($error_message)): ?>
+        <p style="color: red;"><?php echo $error_message; ?></p>
+    <?php endif; ?>
+
+    <form method="post" action="">
+        <label for="email">Enter Email:</label>
+        <input type="text" name="email" required>
+        <button type="submit">Send OTP</button>
+    </form>
+</body>
+</html>
